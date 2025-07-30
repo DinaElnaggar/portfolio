@@ -1,0 +1,113 @@
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-pulse:hover {
+  animation: pulse 1s infinite;
+}
+
+.typewriter-text {
+  overflow: hidden;
+  border-right: 0.15em solid;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: currentColor }
+}
+
+.nav-link {
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+  }
+  
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.skill-progress {
+  position: relative;
+  height: 8px;
+  border-radius: 4px;
+  background: #e9ecef;
+  overflow: hidden;
+  
+  .progress-bar {
+    position: absolute;
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb);
+    animation: progressAnimation 1.5s ease-in-out;
+  }
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0;
+  }
+}
+
+.hover-card {
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+}

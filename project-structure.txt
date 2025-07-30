@@ -1,0 +1,16 @@
+portfolio/
+├── src/
+│   ├── js/
+│   │   ├── main.js
+│   │   └── animations.js
+│   ├── scss/
+│   │   ├── styles.scss
+│   │   ├── _variables.scss
+│   │   └── _animations.scss
+│   ├── assets/
+│   │   ├── images/
+│   │   └── resume/
+│   └── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js

@@ -1,0 +1,13 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+ "scripts": {
+"start": "concurrently \"sass --watch src/scss/styles.scss:src/css/styles.css\" \"http-server ./src -p 8000\""
+},
+  "author": "Dina Elnaggar",
+  "devDependencies": {
+    "sass": "^1.87.0",
+    "http-server": "^14.1.1"
+  }
+}
